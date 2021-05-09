@@ -1,4 +1,133 @@
-.top_artists{
+
+img {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  #top-songs img {
+      border-radius: 0%;
+  }
+
+  .home-photo img {
+      width: 650px;
+      height: 650px;
+      vertical-align: middle;
+      padding: 10px;
+      border-radius: 0%;
+      border: 5px solid teal;
+      text-align: center;
+      display: block;
+  }
+
+  .center-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .center-images-top-artist {
+      text-align: center;
+  }
+
+  ol {
+      list-style-position: inside;
+  }
+
+  .top-songs-con ol li {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 8px;
+}
+
+
+#list1 {
+    columns: 2;
+    column-gap: 10px;
+    max-width: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 9999;
+}
+
+nav a {
+    float: right;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.container-artist {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: white;
+}
+
+
+.container-home {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: white;
+}
+
+
+.container-genres {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: white;
+}
+
+.container-about {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: teal;
+}
+
+.container-songs {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: teal;
+}
+
+.container-songs-hip-hop {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.top-2021 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.center-images-top-artist li {
+    color: black;
+    
+}
+
+
+  
+  .top_artists{
 
 }
 

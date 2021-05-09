@@ -5,65 +5,219 @@
         <title>EDM Charts</title>
         <link rel = "stylesheet" type = "text/css"
             href = "stylesheet.css">
+            <!--Latest compiled and minified CSS -->
+            <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <!--Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
     <body>
-        <h3> Top EDM/Dance Artists </h3>
+        <div class="container-songs-hip-hop">
+        <nav>
+            <a href="main.html#home">Home</a>
+            <a href="main.html#about">About</a>
+            <a href="main.html#top-artists">Artists</a>
+            <a href="main.html#top-songs">Songs</a>
+            <a href="main.html#genres">Genres</a>
+        </nav>
+        <br>
+        <div id = "top-songs">
+        <h3 class="top-2021"> Top EDM/Dance Artists </h3>
+        <div class="top-songs-con">
         <br>
         <div class = "top_EDM">
         <ol>
-            <li> <em> Goosebumps </em></li>
-                <ul>
-                    <li> Travis Scott & HVME </li>
-                </ul>
-
-            <li> <em> The Business </em></li>
-                <ul>
-                    <li> Tiesto </li>
-                </ul>
-
-            <li> <em> Roses (Imanbel Remix) </em></li>
-                <ul>
-                    <li> SAINt JHN </li>
-                </ul>
-
-            <li> <em> You </em></li>
-                <ul>
-                    <li> Regard x Troye Slvan x Tate McRae </li>
-                </ul>
-
-            <li> <em> ily </em></li>
-                <ul>
-                    <li> Surf Mesa Dt. Emilee </li>
-                </ul>
-
-            <li> <em> Rain On Me </em></li>
-                <ul>
-                    <li> Lady Gage & Ariana Grande </li>
-                </ul>
-
-            <li> <em> Paradise </em></li>
-                <ul>
-                    <li> Meduza & Dermot Kennedy </li>
-                </ul>
-
-            <li> <em> Friday </em></li>
-                <ul>
-                    <li> Riton X Nightcrawlers Ft. Mufasa & Hypeman </li>
-                </ul>
+            <li><img src="./media/goosebumpplay.jpeg" id="icon31"><em>Goosebumps - Travis Scott & HVME</em>
+                <audio id="gooseBumps">
+                    <source src="./media/goosebump.mp3" type="audio/mp3">
+                </audio>
             
-            <li> <em> Head & Heart </em></li>
-                <ul>
-                    <li> Joel Corry X MNEK </li>
-                </ul>
+            <script>
+                var gooseBumps = document.getElementById("gooseBumps");
+                var icon31 = document.getElementById("icon31");
+
+                icon31.onclick = function(){
+                    if(gooseBumps.paused){
+                        gooseBumps.play();
+                        icon31.src="./media/pause.jpeg";
+                        }else{
+                            gooseBumps.pause();
+                            icon31.src="./media/goosebumpplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/businesstheplay.jpeg" id="icon10" class=""><em>The Business - Tiesto</em>
+                <audio id="business">
+                    <source src="./media/business.mp3" type="audio/mp3">
+                </audio>
             
-            <li> <em> Used To Be </em></li>
-                <ul>
-                    <li> Steve Aoki & Kilara Ft. Wiz Khalifa </li>
-                </ul>
+            <script>
+                var business = document.getElementById("business");
+                var icon10 = document.getElementById("icon10");
+
+                icon10.onclick = function(){
+                    if(business.paused){
+                        business.play();
+                        icon10.src="./media/pause.jpeg";
+                        }else{
+                            business.pause();
+                            icon10.src="./media/businesstheplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/rosesplay.jpeg" id="icon32"><em>Roses (Imanbel Remix) - SAINt JHN</em>
+                <audio id="roses">
+                    <source src="./media/roses.mp3" type="audio/mp3">
+                </audio>
             
-        
+            <script>
+                var roses = document.getElementById("roses");
+                var icon32 = document.getElementById("icon32");
+
+                icon32.onclick = function(){
+                    if(roses.paused){
+                        roses.play();
+                        icon32.src="./media/pause.jpeg";
+                        }else{
+                            roses.pause();
+                            icon32.src="./media/rosesplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/youplay.jpeg" id="icon33"><em>You - Regard x Troye Slvan x Tate McRae</em>
+                <audio id="you">
+                    <source src="./media/you.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var you = document.getElementById("you");
+                var icon33 = document.getElementById("icon33");
+
+                icon33.onclick = function(){
+                    if(you.paused){
+                        you.play();
+                        icon33.src="./media/pause.jpeg";
+                        }else{
+                            you.pause();
+                            icon33.src="./media/youplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/ilyplay.jpeg" id="icon34"><em>ily - Surf Mesa Dt. Emilee</em>
+                <audio id="ily">
+                    <source src="./media/ily.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var ily = document.getElementById("ily");
+                var icon34 = document.getElementById("icon34");
+
+                icon34.onclick = function(){
+                    if(ily.paused){
+                        ily.play();
+                        icon34.src="./media/pause.jpeg";
+                        }else{
+                            ily.pause();
+                            icon34.src="./media/ilyplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/rainonplay.jpeg" id="icon35"><em>Rain On Me - Lady Gage & Ariana Grande</em>
+                <audio id="rainOn">
+                    <source src="./media/rainon.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var rainOn = document.getElementById("rainOn");
+                var icon35 = document.getElementById("icon35");
+
+                icon35.onclick = function(){
+                    if(rainOn.paused){
+                        rainOn.play();
+                        icon35.src="./media/pause.jpeg";
+                        }else{
+                            rainOn.pause();
+                            icon35.src="./media/rainonplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/paradiseplay.jpeg" id="icon36"><em>Paradise - Meduza & Dermot Kennedy</em>
+                <audio id="paradise">
+                    <source src="./media/paradise.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var paradise = document.getElementById("paradise");
+                var icon36 = document.getElementById("icon36");
+
+                icon36.onclick = function(){
+                    if(paradise.paused){
+                        paradise.play();
+                        icon36.src="./media/pause.jpeg";
+                        }else{
+                            paradise.pause();
+                            icon36.src="./media/paradiseplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/fridayplay.jpeg" id="icon36"><em>Friday - Riton X Nightcrawlers Ft. Mufasa & Hypeman</em>
+                <audio id="paradise">
+                    <source src="./media/friday.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var paradise = document.getElementById("paradise");
+                var icon36 = document.getElementById("icon36");
+
+                icon36.onclick = function(){
+                    if(paradise.paused){
+                        paradise.play();
+                        icon36.src="./media/pause.jpeg";
+                        }else{
+                            paradise.pause();
+                            icon36.src="./media/fridayplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/headHeartplay.jpeg" id="icon37"><em>Head & Heart - Joel Corry X MNEK</em>
+                <audio id="headHeart">
+                    <source src="./media/headheart.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var headHeart = document.getElementById("headHeart");
+                var icon37 = document.getElementById("icon37");
+
+                icon37.onclick = function(){
+                    if(headHeart.paused){
+                        headHeart.play();
+                        icon37.src="./media/pause.jpeg";
+                        }else{
+                            headHeart.pause();
+                            icon37.src="./media/headHeartplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/usedToPlay.jpeg" id="icon38"><em>Used To Be - Steve Aoki & Kilara Ft. Wiz Khalifa</em>
+                <audio id="usedTo">
+                    <source src="./media/usedto.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var usedTo = document.getElementById("usedTo");
+                var icon38 = document.getElementById("icon38");
+
+                icon38.onclick = function(){
+                    if(usedTo.paused){
+                        usedTo.play();
+                        icon38.src="./media/pause.jpeg";
+                        }else{
+                            usedTo.pause();
+                            icon38.src="./media/usedToPlay.jpeg";
+                    }
+                }           
+            </script></li>
         </ol>
-        </div>
+        </div></div></div></div>
     </body>
 </html>

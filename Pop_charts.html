@@ -5,65 +5,217 @@
         <title> Pop Charts </title>
         <link rel = "stylesheet" type = "text/css"
             href = "stylesheet.css">
+            <!--Latest compiled and minified CSS -->
+            <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <!--Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
     <body>
-        <h3> Top Pop Songs  </h3>
+        <div class="container-songs">
+        <nav>
+            <a href="main.html#home">Home</a>
+            <a href="main.html#about">About</a>
+            <a href="main.html#top-artists">Artists</a>
+            <a href="main.html#top-songs">Songs</a>
+            <a href="main.html#genres">Genres</a>
+        </nav>
         <br>
-        <div class = "top_pop">
-        <ol>
-            <li> <em> Levitating </em></li>
-                <ul>
-                    <li> Dua Lip Ft. DaBaby </li>
-                </ul>
-
-            <li> <em> Peaches </em></li>
-                <ul>
-                    <li> Justin Bieber Ft. Daniel Caesar and Giveon </li>
-                </ul>
-
-            <li> <em> Beautiful Mistakes </em></li>
-                <ul>
-                    <li> Marron 5 and Megan Thee Stalion </li>
-                </ul>
-
-            <li> <em> Kiss Me More </em></li>
-                <ul>
-                    <li> Doja Cat Ft. SZA </li>
-                </ul>
-
-            <li> <em> MONTERO (Call Me By My Name) </em></li>
-                <ul>
-                    <li> Lil Nas X </li>
-                </ul>
-
-            <li> <em> The Business </em></li>
-                <ul>
-                    <li> Tiesto </li>
-                </ul>
-
-            <li> <em> We're Good </em></li>
-                <ul>
-                    <li> Dua Lipa </li>
-                </ul>
-
-            <li> <em> deja vu </em></li>
-                <ul>
-                    <li> Oliva Rodrigo </li>
-                </ul>
-            
-            <li> <em> Stayin' Alive (From :Satruday Night Fever" Soundtrack </em></li>
-                <ul>
-                    <li> Bee Gees</li>
-                </ul>
-            
-            <li> <em> drivers license </em></li>
-                <ul>
-                    <li> Olivia Rodrigo </li>
-                </ul>
-            
+            <div id = "top-songs">
+        <h3 class="top-2021"> Top 2021 Pop Songs  </h3>
+        <div class="top-songs-con">
+        <br>
+            <ol>
+                <li><img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Dua_Lipa_Levitating_%28DaBaby_Remix%29.png" id="icon4"><em>Levitating - Dua Lipa Ft. DaBaby</em>
+                        <audio id="levitating">
+                            <source src="./media/levitating.mp3" type="audio/mp3">
+                        </audio>
+                    
+                    <script>
+                        var levitating = document.getElementById("levitating");
+                        var icon4 = document.getElementById("icon4");
         
-        </ol>
-        </div>
+                        icon4.onclick = function(){
+                            if(levitating.paused){
+                                levitating.play();
+                                icon4.src="./media/pause.jpeg";
+                                }else{
+                                    levitating.pause();
+                                    icon4.src="./media/levitatingplay.png";
+                            }
+                        }           
+                    </script></li>
+                    <li><img src="https://thefader-res.cloudinary.com/private_images/c_limit,w_1024/c_crop,h_593,w_1114,x_0,y_12,f_auto,q_auto:eco/bieber-peaches-video_pl0bdx/bieber-peaches-video_pl0bdx.jpg" id="icon2"><em>Peaches - Justin Bieber Ft. Daniel Caesar & Giveon</em>
+                        <audio id="peaches">
+                            <source src="./media/peaches.mp3" type="audio/mp3">
+                        </audio>
+                    
+                    <script>
+                        var peaches = document.getElementById("peaches");
+                        var icon2 = document.getElementById("icon2");
+        
+                        icon2.onclick = function(){
+                            if(peaches.paused){
+                                peaches.play();
+                                icon2.src="./media/pause.jpeg";
+                                }else{
+                                    peaches.pause();
+                                    icon2.src="./media/peachesplay.jpeg";
+                            }
+                        }           
+                    </script></li>
+                    <li><img src="./media/beautifulplay.jpeg" id="icon14"><em>Beautiful Mistakes - Marron 5 and Megan Thee Stalion</em>
+                        <audio id="beautiful">
+                            <source src="./media/Beautiful.mp3" type="audio/mp3">
+                        </audio>
+                    
+                    <script>
+                        var beautiful = document.getElementById("beautiful");
+                        var icon14 = document.getElementById("icon14");
+        
+                        icon14.onclick = function(){
+                            if(beautiful.paused){
+                                beautiful.play();
+                                icon14.src="./media/pause.jpeg";
+                                }else{
+                                    beautiful.pause();
+                                    icon14.src="./media/beautifulplay.jpeg";
+                            }
+                        }           
+                    </script></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyM4Xmjv0ge-CO38aShq_wgpd2JkAjm3s4Vw&usqp=CAU" id="icon7"><em>Kiss Me More - Doja Cat Ft. SZA</em>
+                <audio id="kissMe">
+                    <source src="./media/kissMe.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var kissMe = document.getElementById("kissMe");
+                var icon7 = document.getElementById("icon7");
+
+                icon7.onclick = function(){
+                    if(kissMe.paused){
+                        kissMe.play();
+                        icon7.src="./media/pause.jpeg";
+                        }else{
+                            kissMe.pause();
+                            icon7.src="./media/kissmeplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="https://www.gaytimes.co.uk/wp-content/uploads/2021/03/Lil-Nas-X-590x370.jpg" id="icon3"><em>Montero (Call Me By Your Name) - Lil Nas X</em>
+                <audio id="montero">
+                    <source src="./media/montero.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var montero = document.getElementById("montero");
+                var icon3 = document.getElementById("icon3");
+
+                icon3.onclick = function(){
+                    if(montero.paused){
+                        montero.play();
+                        icon3.src="./media/pause.jpeg";
+                        }else{
+                            montero.pause();
+                            icon3.src="./media/monteroplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/staynplay.jpeg" id="icon11" class=""><em>Stayin' Alive (From :Satruday Night Fever" Soundtrack) - Bee Gees</em>
+                <audio id="staynAlive">
+                    <source src="./media/stayn.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var staynAlive = document.getElementById("staynAlive");
+                var icon11 = document.getElementById("icon11");
+
+                icon11.onclick = function(){
+                    if(staynAlive.paused){
+                        staynAlive.play();
+                        icon11.src="./media/pause.jpeg";
+                        }else{
+                            staynAlive.pause();
+                            icon11.src="./media/staynplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/businesstheplay.jpeg" id="icon10" class=""><em>The Business - Tiesto</em>
+                <audio id="business">
+                    <source src="./media/business.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var business = document.getElementById("business");
+                var icon10 = document.getElementById("icon10");
+
+                icon10.onclick = function(){
+                    if(business.paused){
+                        business.play();
+                        icon10.src="./media/pause.jpeg";
+                        }else{
+                            business.pause();
+                            icon10.src="./media/businesstheplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/goodplay.jpeg" id="icon13" class=""><em>We're Good - Dua Lipa</em>
+                <audio id="weGood">
+                    <source src="./media/good.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var weGood = document.getElementById("weGood");
+                var icon13 = document.getElementById("icon13");
+
+                icon13.onclick = function(){
+                    if(weGood.paused){
+                        weGood.play();
+                        icon13.src="./media/pause.jpeg";
+                        }else{
+                            weGood.pause();
+                            icon13.src="./media/goodplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/dejaplay.jpeg" id="icon12" class=""><em>Deja Vu - Oliva Rodrigo</em>
+                <audio id="dejaVu">
+                    <source src="./media/deja.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var dejaVu = document.getElementById("dejaVu");
+                var icon12 = document.getElementById("icon12");
+
+                icon12.onclick = function(){
+                    if(dejaVu.paused){
+                        dejaVu.play();
+                        icon12.src="./media/pause.jpeg";
+                        }else{
+                            dejaVu.pause();
+                            icon12.src="./media/dejaplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStoMSnj9oCXeAi8exfPecmor9DKs3veuFQ9A&usqp=CAU" id="icon9" class=""><em>Drivers License - Olivia Rodrigo</em>
+                <audio id="driverLicense">
+                    <source src="./media/driversLicense.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var driverLicense = document.getElementById("driverLicense");
+                var icon9 = document.getElementById("icon9");
+
+                icon9.onclick = function(){
+                    if(driverLicense.paused){
+                        driverLicense.play();
+                        icon9.src="./media/pause.jpeg";
+                        }else{
+                            driverLicense.pause();
+                            icon9.src="./media/driverplay.jpeg";
+                    }
+                }           
+            </script></li>
+        </ol></div></div></div>
     </body>
 </html>

@@ -5,65 +5,220 @@
         <title> Rock Charts </title>
         <link rel = "stylesheet" type = "text/css"
             href = "stylesheet.css">
+            <!--Latest compiled and minified CSS -->
+            <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <!--Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
     <body>
-        <h3> Top Rock Artists </h3>
+        <div class="container-songs">
+        <nav>
+            <a href="main.html#home">Home</a>
+            <a href="main.html#about">About</a>
+            <a href="main.html#top-artists">Artists</a>
+            <a href="main.html#top-songs">Songs</a>
+            <a href="main.html#genres">Genres</a>
+        </nav>
+        <br>
+        <div id = "top-songs">
+
+        <h3 class="top-2021"> Top 2021 Rock Songs </h3>
+        <div class="top-songs-con">
         <br>
         <div class = "top_rock">
         <ol>
-            <li> <em> Bloody Valentine </em></li>
-                <ul>
-                    <li> Machine Gun Kelly </li>
-                </ul>
-
-            <li> <em> Care </em></li>
-                <ul>
-                    <li> beabadoobee </li>
-                </ul>
-
-            <li> <em> Mood </em></li>
-                <ul>
-                    <li> 24kGoldn Ft. iann dior </li>
-                </ul>
-
-            <li> <em> Kyoto </em></li>
-                <ul>
-                    <li> Phoebe Bridgers </li>
-                </ul>
-
-            <li> <em> Ode to the Mets </em></li>
-                <ul>
-                    <li> The Strokes </li>
-                </ul>
-
-            <li> <em> Me & You Together Song </em></li>
-                <ul>
-                    <li> The 1975 </li>
-                </ul>
-
-            <li> <em> Gospel For a New Century </em></li>
-                <ul>
-                    <li> Yves Tumor </li>
-                </ul>
-
-            <li> <em> Circle the Drain </em></li>
-                <ul>
-                    <li> Soccer Mommy </li>
-                </ul>
+            <li><img src="./media/bloodyplay.jpeg" id="icon22"><em>Bloody Valentine - Machine Gun Kelly</em>
+                <audio id="bloody">
+                    <source src="./media/bloody.mp3" type="audio/mp3">
+                </audio>
             
-            <li> <em> No Flag </em></li>
-                <ul>
-                    <li> Elvis Costello </li>
-                </ul>
+            <script>
+                var bloody = document.getElementById("bloody");
+                var icon22 = document.getElementById("icon22");
+
+                icon22.onclick = function(){
+                    if(bloody.paused){
+                        bloody.play();
+                        icon22.src="./media/pause.jpeg";
+                        }else{
+                            bloody.pause();
+                            icon22.src="./media/bloodyplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/careplay.jpeg" id="icon23"><em>Care - beabadoobee</em>
+                <audio id="care">
+                    <source src="./media/care.mp3" type="audio/mp3">
+                </audio>
             
-            <li> <em> How Will I Rest If I'm Buried By a Highway </em></li>
-                <ul>
-                    <li> KennyHoopla </li>
-                </ul>
+            <script>
+                var care = document.getElementById("care");
+                var icon23 = document.getElementById("icon23");
+
+                icon23.onclick = function(){
+                    if(care.paused){
+                        care.play();
+                        icon23.src="./media/pause.jpeg";
+                        }else{
+                            care.pause();
+                            icon23.src="./media/careplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/moodplay.jpeg" id="icon21"><em>Mood - 24kGoldn Ft. Iann Dior</em>
+                <audio id="mood">
+                    <source src="./media/mood.mp3" type="audio/mp3">
+                </audio>
             
-        
+            <script>
+                var mood = document.getElementById("mood");
+                var icon21 = document.getElementById("icon21");
+
+                icon21.onclick = function(){
+                    if(mood.paused){
+                        mood.play();
+                        icon21.src="./media/pause.jpeg";
+                        }else{
+                            mood.pause();
+                            icon21.src="./media/moodplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/phoebeplay.jpeg" id="icon24"><em>Kyoto - Phoebe Bridgers</em>
+                <audio id="kyoto">
+                    <source src="./media/kyoto.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var kyoto = document.getElementById("kyoto");
+                var icon24 = document.getElementById("icon24");
+
+                icon24.onclick = function(){
+                    if(kyoto.paused){
+                        kyoto.play();
+                        icon24.src="./media/pause.jpeg";
+                        }else{
+                            kyoto.pause();
+                            icon24.src="./media/phoebeplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/theStrokesPlay.jpeg" id="icon25"><em>Ode to the Mets - The Strokes</em>
+                <audio id="theStrokes">
+                    <source src="./media/thestrokes.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var theStrokes = document.getElementById("theStrokes");
+                var icon25 = document.getElementById("icon25");
+
+                icon25.onclick = function(){
+                    if(theStrokes.paused){
+                        theStrokes.play();
+                        icon25.src="./media/pause.jpeg";
+                        }else{
+                            theStrokes.pause();
+                            icon25.src="./media/theStrokesPlay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/1975play.jpeg" id="icon26"><em>Me & You Together Song - The 1975</em>
+                <audio id="the1975">
+                    <source src="./media/the1975.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var the1975 = document.getElementById("the1975");
+                var icon26 = document.getElementById("icon26");
+
+                icon26.onclick = function(){
+                    if(the1975.paused){
+                        the1975.play();
+                        icon26.src="./media/pause.jpeg";
+                        }else{
+                            the1975.pause();
+                            icon26.src="./media/1975play.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/yvesTumorPlay.jpeg" id="icon27"><em>Gospel For a New Century - Yves Tumor</em>
+                <audio id="yvesTumor">
+                    <source src="./media/yvestumor.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var yvesTumor = document.getElementById("yvesTumor");
+                var icon27 = document.getElementById("icon27");
+
+                icon27.onclick = function(){
+                    if(yvesTumor.paused){
+                        yvesTumor.play();
+                        icon27.src="./media/pause.jpeg";
+                        }else{
+                            yvesTumor.pause();
+                            icon27.src="./media/yvesTumorPlay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/soccerplay.jpeg" id="icon28"><em>Circle the Drain - Soccer Mommy</em>
+                <audio id="soccerMom">
+                    <source src="./media/soccermom.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var soccerMom = document.getElementById("soccerMom");
+                var icon28 = document.getElementById("icon28");
+
+                icon28.onclick = function(){
+                    if(soccerMom.paused){
+                        soccerMom.play();
+                        icon28.src="./media/pause.jpeg";
+                        }else{
+                            soccerMom.pause();
+                            icon28.src="./media/soccerplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/noFlagPlay.jpeg" id="icon29"><em>No Flag - Elvis Costello</em>
+                <audio id="noFlag">
+                    <source src="./media/noflag.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var noFlag = document.getElementById("noFlag");
+                var icon29 = document.getElementById("icon29");
+
+                icon29.onclick = function(){
+                    if(noFlag.paused){
+                        noFlag.play();
+                        icon29.src="./media/pause.jpeg";
+                        }else{
+                            noFlag.pause();
+                            icon29.src="./media/noFlagPlay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/howwillplay.jpeg" id="icon30"><em>How Will I Rest If I'm Buried By a Highway - KennyHoopla</em>
+                <audio id="howWill">
+                    <source src="./media/howwill.mp3" type="audio/mp3">
+                </audio>
+            
+            <script>
+                var howWill = document.getElementById("howWill");
+                var icon30 = document.getElementById("icon30");
+
+                icon30.onclick = function(){
+                    if(howWill.paused){
+                        howWill.play();
+                        icon30.src="./media/pause.jpeg";
+                        }else{
+                            howWill.pause();
+                            icon30.src="./media/noFlagPlay.jpeg";
+                    }
+                }           
+            </script></li>
         </ol>
-        </div>
+        </div></div></div></div>
     </body>
 </html>

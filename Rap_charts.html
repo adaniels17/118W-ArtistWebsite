@@ -5,65 +5,221 @@
         <title> Hip-Hop Charts </title>
         <link rel = "stylesheet" type = "text/css"
             href = "stylesheet.css">
+            <!--Latest compiled and minified CSS -->
+            <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <!--Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
     <body>
-        <h3> Top Hip-Hop/Rap Songs  </h3>
+        <div class="container-songs-hip-hop">
+        <nav>
+            <a href="main.html#home">Home</a>
+            <a href="main.html#about">About</a>
+            <a href="main.html#top-artists">Artists</a>
+            <a href="main.html#top-songs">Songs</a>
+            <a href="main.html#genres">Genres</a>
+        </nav>
+        <br>
+        <div id = "top-songs">
+        <h3 class="top-2021"> Top 2021 Hip-Hop/Rap Songs</h3>
+        <div class="top-songs-con">
         <br>
         <div class = "top_hip_rap">
         <ol>
-            <li> <em> Rapstar </em></li>
-                <ul>
-                    <li> Polo G. </li>
-                </ul>
+            <li><img src="https://i.ytimg.com/vi/VPdzWmVQcSc/maxresdefault.jpg" id="icon"><em> Rapstar - Polo G </em> 
+                <audio id="rapStar">
+                    <source src="./media/rapstar.mp3" type="audio/mp3">
+                </audio>
 
-            <li> <em> Astronaut In The Ocean </em></li>
-                <ul>
-                    <li> Masked Wolf </li>
-                </ul>
+                <script>
+                    var rapStar = document.getElementById("rapStar");
+                    var icon = document.getElementById("icon");
 
-            <li> <em> Up </em></li>
-                <ul>
-                    <li> Cardi B </li>
-                </ul>
+                    icon.onclick = function(){
+                        if(rapStar.paused){
+                            rapStar.play();
+                            icon.src="./media/pause.jpeg";
+                        }else{
+                            rapStar.pause();
+                            icon.src="./media/rsplay.jpeg";
 
-            <li> <em> Solid </em></li>
-                <ul>
-                    <li> Young Thug & Gunna Ft. Drake </li>
-                </ul>
+                        }
+                    }
 
-            <li> <em> Beat Box </em></li>
-                <ul>
-                    <li> SpotemGottem Ft. Pooh Shiest Or DaBaby </li>
-                </ul>
-
-            <li> <em> Best Friend </em></li>
-                <ul>
-                    <li> Saweetie Ft. Doja Cat </li>
-                </ul>
-
-            <li> <em> Calling My Phone </em></li>
-                <ul>
-                    <li> Lil Tjay Ft. 6LACK </li>
-                </ul>
-
-            <li> <em> What You Know About Love </em></li>
-                <ul>
-                    <li> Pop Smoke </li>
-                </ul>
-            
-            <li> <em> Ski </em></li>
-                <ul>
-                    <li> Young Thug & Gunna </li>
-                </ul>
-            
-            <li> <em> Mood </em></li>
-                <ul>
-                    <li> 24kGoldn Ft. iann dior </li>
-                </ul>
-            
-        
+                </script></li>
+                <li><img src="https://i1.sndcdn.com/artworks-cJNNzOVvLWF5ycyy-3HfesA-t500x500.jpg" id="icon6"><em>Astronoaut In The Ocean - Masked Wolf</em>
+                    <audio id="astronoaut">
+                        <source src="./media/astronaut.mp3" type="audio/mp3">
+                    </audio>
+                
+                <script>
+                    var astronoaut = document.getElementById("astronoaut");
+                    var icon6 = document.getElementById("icon6");
+    
+                    icon6.onclick = function(){
+                        if(astronoaut.paused){
+                            astronoaut.play();
+                            icon6.src="./media/pause.jpeg";
+                            }else{
+                                astronoaut.pause();
+                                icon6.src="./media/astronautplay.jpeg";
+                        }
+                    }           
+                </script></li>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAa0SWsSNqaDhOZ2qH_udvuw_tmN7sKtnTg&usqp=CAU" id="icon8"><em>Up - Cardi B</em>
+                    <audio id="up">
+                        <source src="./media/up.mp3" type="audio/mp3">
+                    </audio>
+                
+                <script>
+                    var up = document.getElementById("up");
+                    var icon8 = document.getElementById("icon8");
+    
+                    icon8.onclick = function(){
+                        if(up.paused){
+                            up.play();
+                            icon8.src="./media/pause.jpeg";
+                            }else{
+                                up.pause();
+                                icon8.src="./media/upplay.jpeg";
+                        }
+                    }           
+                </script></li>
+                <li><img src="./media/solidplay.jpeg" id="icon15"><em>Solid - Young Thug & Gunna Ft. Drake</em>
+                    <audio id="solid">
+                        <source src="./media/solid.mp3" type="audio/mp3">
+                    </audio>
+                
+                <script>
+                    var solid = document.getElementById("solid");
+                    var icon15 = document.getElementById("icon15");
+    
+                    icon15.onclick = function(){
+                        if(solid.paused){
+                            solid.play();
+                            icon15.src="./media/pause.jpeg";
+                            }else{
+                                solid.pause();
+                                icon15.src="./media/solidplay.jpeg";
+                        }
+                    }           
+                </script></li>
+                <li><img src="./media/beatBoxPlay.jpeg" id="icon16"><em>Beat Box - SpotemGottem Ft. Pooh Shiest Or DaBaby</em>
+                    <audio id="beatBox">
+                        <source src="./media/beat.mp3" type="audio/mp3">
+                    </audio>
+                
+                <script>
+                    var beatBox = document.getElementById("beatBox");
+                    var icon16 = document.getElementById("icon16");
+    
+                    icon16.onclick = function(){
+                        if(beatBox.paused){
+                            beatBox.play();
+                            icon16.src="./media/pause.jpeg";
+                            }else{
+                                beatBox.pause();
+                                icon16.src="./media/beatBoxPlay.jpeg";
+                        }
+                    }           
+                </script></li>
+                <li><img src="./media/bestfriendplay.jpeg" id="icon17"><em>Best Friend - Saweetie Ft. Doja Cat</em>
+                    <audio id="bestFriend">
+                        <source src="./media/bestfriend.mp3" type="audio/mp3">
+                    </audio>
+                
+                <script>
+                    var bestFriend = document.getElementById("bestFriend");
+                    var icon17 = document.getElementById("icon17");
+    
+                    icon17.onclick = function(){
+                        if(bestFriend.paused){
+                            bestFriend.play();
+                            icon17.src="./media/pause.jpeg";
+                            }else{
+                                bestFriend.pause();
+                                icon17.src="./media/bestfriendplay.jpeg";
+                        }
+                    }           
+                </script></li>
+                <li><img src="./media/callingphoneplay.jpeg" id="icon18"><em>Calling My Phone - Lil Tjay Ft. 6LACK</em>
+                    <audio id="callingPhone">
+                        <source src="./media/callingphone.mp3" type="audio/mp3">
+                    </audio>
+                
+                <script>
+                    var callingPhone = document.getElementById("callingPhone");
+                    var icon18 = document.getElementById("icon18");
+    
+                    icon18.onclick = function(){
+                        if(callingPhone.paused){
+                            callingPhone.play();
+                            icon18.src="./media/pause.jpeg";
+                            }else{
+                                callingPhone.pause();
+                                icon18.src="./media/callingphoneplay.jpeg";
+                        }
+                    }           
+                </script></li>
+                <li><img src="./media/whatYouPlay.jpeg" id="icon19"><em>What You Know About Love - Pop Smoke</em>
+                    <audio id="whatYou">
+                        <source src="./media/whatyou.mp3" type="audio/mp3">
+                    </audio>
+                
+                <script>
+                    var whatYou = document.getElementById("whatYou");
+                    var icon19 = document.getElementById("icon19");
+    
+                    icon19.onclick = function(){
+                        if(whatYou.paused){
+                            whatYou.play();
+                            icon19.src="./media/pause.jpeg";
+                            }else{
+                                whatYou.pause();
+                                icon19.src="./media/whatYouPlay.jpeg";
+                        }
+                    }           
+                </script></li>
+                <li><img src="./media/skiplay.jpeg" id="icon20"><em>Ski - Young Thug & Gunna</em>
+                    <audio id="ski">
+                        <source src="./media/ski.mp3" type="audio/mp3">
+                    </audio>
+                
+                <script>
+                    var ski = document.getElementById("ski");
+                    var icon20 = document.getElementById("icon20");
+    
+                    icon20.onclick = function(){
+                        if(ski.paused){
+                            ski.play();
+                            icon20.src="./media/pause.jpeg";
+                            }else{
+                                ski.pause();
+                                icon20.src="./media/skiplay.jpeg";
+                        }
+                    }           
+                </script></li>
+                <li><img src="./media/moodplay.jpeg" id="icon21"><em>Mood - 24kGoldn Ft. Iann Dior</em>
+                    <audio id="mood">
+                        <source src="./media/mood.mp3" type="audio/mp3">
+                    </audio>
+                
+                <script>
+                    var mood = document.getElementById("mood");
+                    var icon21 = document.getElementById("icon21");
+    
+                    icon21.onclick = function(){
+                        if(mood.paused){
+                            mood.play();
+                            icon21.src="./media/pause.jpeg";
+                            }else{
+                                mood.pause();
+                                icon21.src="./media/moodplay.jpeg";
+                        }
+                    }           
+                </script></li>
         </ol>
-        </div>
+        </div></div></div></div>
     </body>
 </html>
