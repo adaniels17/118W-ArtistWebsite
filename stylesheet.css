@@ -1,3 +1,16 @@
+/* Layout Resets */
+* {
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+}
 
 img {
     width: 100px;
@@ -11,44 +24,12 @@ img {
       border-radius: 0%;
   }
 
-  .home-photo img {
-      width: 650px;
-      height: 650px;
-      vertical-align: middle;
-      padding: 10px;
-      border-radius: 0%;
-      border: 5px solid teal;
-      text-align: center;
-      display: block;
-  }
-
-  .center-photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  .center-images-top-artist {
-      text-align: center;
-  }
 
   ol {
       list-style-position: inside;
   }
 
-  .top-songs-con ol li {
-    border-bottom: 1px solid #dfdfdf;
-    padding: 8px;
-}
-
-
-#list1 {
-    columns: 2;
-    column-gap: 10px;
-    max-width: 100%;
-}
-
+/* Navigation Section */
 nav {
     position: fixed;
     top: 0;
@@ -67,57 +48,65 @@ nav a {
     text-decoration: none;
 }
 
-
-.container-artist {
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: white;
-}
-
-
+/* Home Section */
 .container-home {
     min-height: 100vh;
     min-width: 100vw;
     background-color: white;
 }
 
+.home-photo img {
+    width: 650px;
+    height: 650px;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 0%;
+    border: 5px solid teal;
+    text-align: center;
+    display: block;
+}
 
-.container-genres {
+.center-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/* About Section */
+.container-about {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: teal;
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-header {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* Top-Artists Section */
+.container-artist {
     min-height: 100vh;
     min-width: 100vw;
     background-color: white;
 }
 
-.container-about {
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: teal;
-}
-
-.container-songs {
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: teal;
-}
-
-.container-songs-hip-hop {
-    min-height: 100vh;
-    min-width: 100vw;
-}
-
-h1 {
-    text-align: center;
-    font-size: 50px;
-}
-
-h3 {
-    text-align: center;
-}
-
-.top-2021 {
+.artist-header {
     text-align: center;
     color: black;
     font-weight: bold;
+}
+#top-artist-list {
+    columns: 2;
+    column-gap: 10px;
+    max-width: 100%;
+}
+.center-images-top-artist {
+    text-align: center;
 }
 
 .center-images-top-artist li {
@@ -125,32 +114,173 @@ h3 {
     
 }
 
-
-  
-  .top_artists{
-
+/* Top-Songs Section */
+.container-songs {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: teal;
 }
 
-.top_songs{
-    
+.top-songs-header {
+    text-align: center;
+    color: black;
+    font-weight: bold;
 }
 
-.top_EDM{
-
+.top-songs-con ol li {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 8px;
 }
 
-.top_latin{
-
+/* Genres Section */
+.container-genres {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: white;
 }
 
-.top_pop{
-
+.genres-header {
+    text-align: center;
+    color: black;
+    font-weight: bold;
 }
 
-.top_hip_rap{
-
+/* Top-Pop Section */
+.container-pop-songs2 {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(
+    to top, 
+    teal 0%, 
+    teal 50%, 
+    white 50%, 
+    white 100%
+  );
 }
 
-.top_rock{
-    
+#top-pop-songs img {
+    border-radius: 0%;
+}
+
+.top-pop-header {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.top-pop-con2 ol li {
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+/* Top-Latin Section */
+.container-latin-songs2 {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(
+    to top, 
+    teal 0%, 
+    teal 50%, 
+    white 50%, 
+    white 100%
+  );
+}
+
+#top-latin-songs img {
+    border-radius: 0%;
+}
+
+.top-latin-con2 ol li {
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+.top-latin-header {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* Top-Rock Section */
+.container-rock-songs2 {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(
+    to top, 
+    teal 0%, 
+    teal 50%, 
+    white 50%, 
+    white 100%
+  );
+}
+
+#top-rock-songs img {
+    border-radius: 0%;
+}
+
+.top-rock-header {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.top-rock-con2 ol li {
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+/* EDM/Dance Section */
+.container-edm-songs2 {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(
+    to top, 
+    teal 0%, 
+    teal 50%, 
+    white 50%, 
+    white 100%
+  );
+}
+
+#top-edm-songs img {
+    border-radius: 0%;
+}
+
+.edm-dance-header {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.edm-dance-con2 ol li {
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+/* Hip-hop/Rap Section */
+.container-rap-songs2 {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(
+    to top, 
+    teal 0%, 
+    teal 50%, 
+    white 50%, 
+    white 100%
+  );
+}
+
+#top-rap-songs img {
+    border-radius: 0%;
+}
+
+.hip-rap-header {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.rap-hiphop-con2 ol li {
+    border-bottom: 1px solid black;
+    padding: 8px;
 }

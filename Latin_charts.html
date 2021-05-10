@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Latin Charts</title>
         <link rel = "stylesheet" type = "text/css"
             href = "stylesheet.css">
@@ -12,32 +13,214 @@
     </head>
     
     <body>
-        <div class="container-songs">
+        <!--Navigation Bar -->
+        <div class="container-latin-songs2">
         <nav>
-            <a href="main.html#home">Home</a>
-            <a href="main.html#about">About</a>
-            <a href="main.html#top-artists">Artists</a>
-            <a href="main.html#top-songs">Songs</a>
             <a href="main.html#genres">Genres</a>
+            <a href="main.html#top-songs">Songs</a>
+            <a href="main.html#top-artists">Artists</a>
+            <a href="main.html#about">About</a>
+            <a href="main.html#home">Home</a>
         </nav>
         <br>
-        <div id = "top-songs">
-        <h3 class="top-2021"> Top 2021 Latin Artists</h3>
-        <div class="top-songs-con">
+
+        <!--Top Latin Song's Section -->
+        <div id = "top-latin-songs">
+        <h3 class="top-latin-header"> Top 2021 Latin Songs</h3>
+        <div class="top-latin-con2">
         <br>
-        <div class = "top_latin">
         <ol>
-            <li> <em> Dakiti -Bad Bunny & Jhay Cortez</em></li>
-            <li> <em> Telepatia - Kali Uchis</em></li>
-            <li> <em> La Noche de Anoche - Bad Bunny & Rosalia </em></li>
-            <li> <em> Hawai - Maluma & The Weeknd</em></li>
-            <li> <em> Bandido - Myke Towers & Juhn</em></li>
-            <li> <em> El Makinon - Karol G & Mariah Angeliq</em></li>
-            <li> <em> Fiel - Los Legendarios, Wisin & Jhay Cortez</em></li>
-            <li> <em> Otra Noche Sin Ti - J Balvin & Khalid</em></li>
-            <li> <em> Bichota - Karol G</em></li>
-            <li> <em> Reloj - Rauw Alejandro & Anuel AA</em></li>
+            <li><img src="./media/dakitiplaay.jpeg" id="icon39">Dakiti - <em>Bad Bunny & Jhay Cortez</em>
+                <audio id="dakiti">
+                    <source src="./media/dakiti.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - Dakiti-->
+            <script>
+                var dakiti = document.getElementById("dakiti");
+                var icon39 = document.getElementById("icon39");
+
+                icon39.onclick = function(){
+                    if(dakiti.paused){
+                        dakiti.play();
+                        icon39.src="./media/pause.jpeg";
+                        }else{
+                            dakiti.pause();
+                            icon39.src="./media/dakitiplaay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/telepatiaplay.jpeg" id="icon40">Telepatia - <em>Kali Uchis</em>
+                <audio id="telepatia">
+                    <source src="./media/telepatia.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - Telepatia-->
+            <script>
+                var telepatia = document.getElementById("telepatia");
+                var icon40 = document.getElementById("icon40");
+
+                icon40.onclick = function(){
+                    if(telepatia.paused){
+                        telepatia.play();
+                        icon40.src="./media/pause.jpeg";
+                        }else{
+                            telepatia.pause();
+                            icon40.src="./media/telepatiaplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/laNocheplay.jpeg" id="icon41">La Noche de Anoche - <em>Bad Bunny & Rosalia</em>
+                <audio id="laNoche">
+                    <source src="./media/laNoche.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - La Noche de Anoche-->
+            <script>
+                var laNoche = document.getElementById("laNoche");
+                var icon41 = document.getElementById("icon41");
+
+                icon41.onclick = function(){
+                    if(laNoche.paused){
+                        laNoche.play();
+                        icon41.src="./media/pause.jpeg";
+                        }else{
+                            laNoche.pause();
+                            icon41.src="./media/laNocheplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/hawaiplay.jpeg" id="icon42">Hawai - <em>Maluma & The Weeknd</em>
+                <audio id="hawai">
+                    <source src="./media/hawaii.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - Hawai-->
+            <script>
+                var hawai = document.getElementById("hawai");
+                var icon42 = document.getElementById("icon42");
+
+                icon42.onclick = function(){
+                    if(hawai.paused){
+                        hawai.play();
+                        icon42.src="./media/pause.jpeg";
+                        }else{
+                            hawai.pause();
+                            icon42.src="./media/hawaiplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/bandidoplay.jpeg" id="icon43">Bandido - <em>Myke Towers & Juhn</em>
+                <audio id="bandido">
+                    <source src="./media/bandido.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - Bandido-->
+            <script>
+                var bandido = document.getElementById("bandido");
+                var icon43 = document.getElementById("icon43");
+
+                icon43.onclick = function(){
+                    if(bandido.paused){
+                        bandido.play();
+                        icon43.src="./media/pause.jpeg";
+                        }else{
+                            bandido.pause();
+                            icon43.src="./media/bandidoplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/elMakPlay.jpeg" id="icon44">El Makinon - <em>Karol G & Mariah Angeliq</em>
+                <audio id="elMakinon">
+                    <source src="./media/elmak.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - El Makinon-->
+            <script>
+                var elMakinon = document.getElementById("elMakinon");
+                var icon44 = document.getElementById("icon44");
+
+                icon44.onclick = function(){
+                    if(elMakinon.paused){
+                        elMakinon.play();
+                        icon44.src="./media/pause.jpeg";
+                        }else{
+                            elMakinon.pause();
+                            icon44.src="./media/elMakPlay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/fielplay.jpeg" id="icon45">Fiel - <em>Los Legendarios, Wisin & Jhay Cortez</em>
+                <audio id="fiel">
+                    <source src="./media/fiel.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - Los Legendarios-->
+            <script>
+                var fiel = document.getElementById("fiel");
+                var icon45 = document.getElementById("icon45");
+
+                icon45.onclick = function(){
+                    if(fiel.paused){
+                        fiel.play();
+                        icon45.src="./media/pause.jpeg";
+                        }else{
+                            fiel.pause();
+                            icon45.src="./media/fielplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/otraNochePlay.jpeg" id="icon46">Otra Noche Sin Ti - <em>J Balvin & Khalid</em>
+                <audio id="otraNoche">
+                    <source src="./media/otraNoche.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - Otra Noche-->
+            <script>
+                var otraNoche = document.getElementById("otraNoche");
+                var icon46 = document.getElementById("icon46");
+
+                icon46.onclick = function(){
+                    if(otraNoche.paused){
+                        otraNoche.play();
+                        icon46.src="./media/pause.jpeg";
+                        }else{
+                            otraNoche.pause();
+                            icon46.src="./media/otraNochePlay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/bichotaplay.jpeg" id="icon47">Bichota - <em>Karol G</em>
+                <audio id="bichota">
+                    <source src="./media/bichota.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - Bichota-->
+            <script>
+                var bichota = document.getElementById("bichota");
+                var icon47 = document.getElementById("icon47");
+
+                icon47.onclick = function(){
+                    if(bichota.paused){
+                        bichota.play();
+                        icon47.src="./media/pause.jpeg";
+                        }else{
+                            bichota.pause();
+                            icon47.src="./media/bichotaplay.jpeg";
+                    }
+                }           
+            </script></li>
+            <li><img src="./media/relojplay.jpeg" id="icon48">Reloj - <em>Rauw Alejandro & Anuel AA</em>
+                <audio id="reloj">
+                    <source src="./media/reloj.mp3" type="audio/mp3">
+                </audio>
+            <!--JavaScript for Music Player - Reloj-->
+            <script>
+                var reloj = document.getElementById("reloj");
+                var icon48 = document.getElementById("icon48");
+
+                icon48.onclick = function(){
+                    if(reloj.paused){
+                        reloj.play();
+                        icon48.src="./media/pause.jpeg";
+                        }else{
+                            reloj.pause();
+                            icon48.src="./media/bichotaplay.jpeg";
+                    }
+                }           
+            </script></li>
         </ol>
-        </div></div></div></div>
+        </div></div></div>
     </body>
 </html>

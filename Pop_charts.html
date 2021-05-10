@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Pop Charts </title>
         <link rel = "stylesheet" type = "text/css"
             href = "stylesheet.css">
@@ -12,25 +13,28 @@
     </head>
     
     <body>
-        <div class="container-songs">
+        <!--Navigation Bar -->
+        <div class="container-pop-songs2">
         <nav>
-            <a href="main.html#home">Home</a>
-            <a href="main.html#about">About</a>
-            <a href="main.html#top-artists">Artists</a>
-            <a href="main.html#top-songs">Songs</a>
             <a href="main.html#genres">Genres</a>
+            <a href="main.html#top-songs">Songs</a>
+            <a href="main.html#top-artists">Artists</a>
+            <a href="main.html#about">About</a>
+            <a href="main.html#home">Home</a>
         </nav>
         <br>
-            <div id = "top-songs">
-        <h3 class="top-2021"> Top 2021 Pop Songs  </h3>
-        <div class="top-songs-con">
+
+        <!--Top Pop Song's Section-->
+            <div id = "top-pop-songs">
+        <h3 class="top-pop-header"> Top 2021 Pop Songs  </h3>
+        <div class="top-pop-con2">
         <br>
             <ol>
-                <li><img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Dua_Lipa_Levitating_%28DaBaby_Remix%29.png" id="icon4"><em>Levitating - Dua Lipa Ft. DaBaby</em>
+                <li><img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Dua_Lipa_Levitating_%28DaBaby_Remix%29.png" id="icon4">Levitating - <em>Dua Lipa Ft. DaBaby</em>
                         <audio id="levitating">
                             <source src="./media/levitating.mp3" type="audio/mp3">
                         </audio>
-                    
+                    <!--JavaScript for Music Player - Levitating-->
                     <script>
                         var levitating = document.getElementById("levitating");
                         var icon4 = document.getElementById("icon4");
@@ -45,11 +49,11 @@
                             }
                         }           
                     </script></li>
-                    <li><img src="https://thefader-res.cloudinary.com/private_images/c_limit,w_1024/c_crop,h_593,w_1114,x_0,y_12,f_auto,q_auto:eco/bieber-peaches-video_pl0bdx/bieber-peaches-video_pl0bdx.jpg" id="icon2"><em>Peaches - Justin Bieber Ft. Daniel Caesar & Giveon</em>
+                    <li><img src="https://thefader-res.cloudinary.com/private_images/c_limit,w_1024/c_crop,h_593,w_1114,x_0,y_12,f_auto,q_auto:eco/bieber-peaches-video_pl0bdx/bieber-peaches-video_pl0bdx.jpg" id="icon2">Peaches - <em>Justin Bieber Ft. Daniel Caesar & Giveon</em>
                         <audio id="peaches">
                             <source src="./media/peaches.mp3" type="audio/mp3">
                         </audio>
-                    
+                    <!--JavaScript for Music Player - peaches-->
                     <script>
                         var peaches = document.getElementById("peaches");
                         var icon2 = document.getElementById("icon2");
@@ -64,11 +68,11 @@
                             }
                         }           
                     </script></li>
-                    <li><img src="./media/beautifulplay.jpeg" id="icon14"><em>Beautiful Mistakes - Marron 5 and Megan Thee Stalion</em>
+                    <li><img src="./media/beautifulplay.jpeg" id="icon14">Beautiful Mistakes - <em>Marron 5 and Megan Thee Stalion</em>
                         <audio id="beautiful">
                             <source src="./media/Beautiful.mp3" type="audio/mp3">
                         </audio>
-                    
+                    <!--JavaScript for Music Player - Beautiful Mistakes-->
                     <script>
                         var beautiful = document.getElementById("beautiful");
                         var icon14 = document.getElementById("icon14");
@@ -83,11 +87,11 @@
                             }
                         }           
                     </script></li>
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyM4Xmjv0ge-CO38aShq_wgpd2JkAjm3s4Vw&usqp=CAU" id="icon7"><em>Kiss Me More - Doja Cat Ft. SZA</em>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyM4Xmjv0ge-CO38aShq_wgpd2JkAjm3s4Vw&usqp=CAU" id="icon7">Kiss Me More - <em>Doja Cat Ft. SZA</em>
                 <audio id="kissMe">
                     <source src="./media/kissMe.mp3" type="audio/mp3">
                 </audio>
-            
+            <!--JavaScript for Music Player - Kiss Me-->
             <script>
                 var kissMe = document.getElementById("kissMe");
                 var icon7 = document.getElementById("icon7");
@@ -102,11 +106,11 @@
                     }
                 }           
             </script></li>
-            <li><img src="https://www.gaytimes.co.uk/wp-content/uploads/2021/03/Lil-Nas-X-590x370.jpg" id="icon3"><em>Montero (Call Me By Your Name) - Lil Nas X</em>
+            <li><img src="https://www.gaytimes.co.uk/wp-content/uploads/2021/03/Lil-Nas-X-590x370.jpg" id="icon3">Montero (Call Me By Your Name) - <em>Lil Nas X</em>
                 <audio id="montero">
                     <source src="./media/montero.mp3" type="audio/mp3">
                 </audio>
-            
+            <!--JavaScript for Music Player - Montero-->
             <script>
                 var montero = document.getElementById("montero");
                 var icon3 = document.getElementById("icon3");
@@ -121,11 +125,11 @@
                     }
                 }           
             </script></li>
-            <li><img src="./media/staynplay.jpeg" id="icon11" class=""><em>Stayin' Alive (From :Satruday Night Fever" Soundtrack) - Bee Gees</em>
+            <li><img src="./media/staynplay.jpeg" id="icon11" class="">Stayin' Alive (From :Satruday Night Fever" Soundtrack) - <em>Bee Gees</em>
                 <audio id="staynAlive">
                     <source src="./media/stayn.mp3" type="audio/mp3">
                 </audio>
-            
+            <!--JavaScript for Music Player - Stayin' Alive-->
             <script>
                 var staynAlive = document.getElementById("staynAlive");
                 var icon11 = document.getElementById("icon11");
@@ -140,11 +144,11 @@
                     }
                 }           
             </script></li>
-            <li><img src="./media/businesstheplay.jpeg" id="icon10" class=""><em>The Business - Tiesto</em>
+            <li><img src="./media/businesstheplay.jpeg" id="icon10" class="">The Business - <em>Tiesto</em>
                 <audio id="business">
                     <source src="./media/business.mp3" type="audio/mp3">
                 </audio>
-            
+            <!--JavaScript for Music Player - The Business-->
             <script>
                 var business = document.getElementById("business");
                 var icon10 = document.getElementById("icon10");
@@ -159,11 +163,11 @@
                     }
                 }           
             </script></li>
-            <li><img src="./media/goodplay.jpeg" id="icon13" class=""><em>We're Good - Dua Lipa</em>
+            <li><img src="./media/goodplay.jpeg" id="icon13" class="">We're Good - <em>Dua Lipa</em>
                 <audio id="weGood">
                     <source src="./media/good.mp3" type="audio/mp3">
                 </audio>
-            
+            <!--JavaScript for Music Player - We're Good-->
             <script>
                 var weGood = document.getElementById("weGood");
                 var icon13 = document.getElementById("icon13");
@@ -178,11 +182,11 @@
                     }
                 }           
             </script></li>
-            <li><img src="./media/dejaplay.jpeg" id="icon12" class=""><em>Deja Vu - Oliva Rodrigo</em>
+            <li><img src="./media/dejaplay.jpeg" id="icon12" class="">Deja Vu - <em>Oliva Rodrigo</em>
                 <audio id="dejaVu">
                     <source src="./media/deja.mp3" type="audio/mp3">
                 </audio>
-            
+            <!--JavaScript for Music Player - Deja Vu-->
             <script>
                 var dejaVu = document.getElementById("dejaVu");
                 var icon12 = document.getElementById("icon12");
@@ -197,11 +201,11 @@
                     }
                 }           
             </script></li>
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStoMSnj9oCXeAi8exfPecmor9DKs3veuFQ9A&usqp=CAU" id="icon9" class=""><em>Drivers License - Olivia Rodrigo</em>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStoMSnj9oCXeAi8exfPecmor9DKs3veuFQ9A&usqp=CAU" id="icon9" class="">Drivers License - <em>Olivia Rodrigo</em>
                 <audio id="driverLicense">
                     <source src="./media/driversLicense.mp3" type="audio/mp3">
                 </audio>
-            
+            <!--JavaScript for Music Player - Drivers License-->
             <script>
                 var driverLicense = document.getElementById("driverLicense");
                 var icon9 = document.getElementById("icon9");

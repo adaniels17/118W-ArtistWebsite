@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Hip-Hop Charts </title>
         <link rel = "stylesheet" type = "text/css"
             href = "stylesheet.css">
@@ -12,26 +13,29 @@
     </head>
     
     <body>
-        <div class="container-songs-hip-hop">
+        <!--Navigation Bar -->
+        <div class="container-rap-songs2">
         <nav>
-            <a href="main.html#home">Home</a>
-            <a href="main.html#about">About</a>
-            <a href="main.html#top-artists">Artists</a>
-            <a href="main.html#top-songs">Songs</a>
             <a href="main.html#genres">Genres</a>
+            <a href="main.html#top-songs">Songs</a>
+            <a href="main.html#top-artists">Artists</a>
+            <a href="main.html#about">About</a>
+            <a href="main.html#home">Home</a>
         </nav>
         <br>
-        <div id = "top-songs">
-        <h3 class="top-2021"> Top 2021 Hip-Hop/Rap Songs</h3>
-        <div class="top-songs-con">
+
+        <!--Top Hip-Hop/Rap Song's Section -->
+        <div id = "top-rap-songs">
+        <h3 class="hip-rap-header"> Top 2021 Hip-Hop/Rap Songs</h3>
+        <div class="rap-hiphop-con2">
         <br>
         <div class = "top_hip_rap">
         <ol>
-            <li><img src="https://i.ytimg.com/vi/VPdzWmVQcSc/maxresdefault.jpg" id="icon"><em> Rapstar - Polo G </em> 
+            <li><img src="https://i.ytimg.com/vi/VPdzWmVQcSc/maxresdefault.jpg" id="icon">Rapstar - <em>Polo G </em> 
                 <audio id="rapStar">
                     <source src="./media/rapstar.mp3" type="audio/mp3">
                 </audio>
-
+                <!--JavaScript for Music Player - Rapstar-->
                 <script>
                     var rapStar = document.getElementById("rapStar");
                     var icon = document.getElementById("icon");
@@ -48,11 +52,11 @@
                     }
 
                 </script></li>
-                <li><img src="https://i1.sndcdn.com/artworks-cJNNzOVvLWF5ycyy-3HfesA-t500x500.jpg" id="icon6"><em>Astronoaut In The Ocean - Masked Wolf</em>
+                <li><img src="https://i1.sndcdn.com/artworks-cJNNzOVvLWF5ycyy-3HfesA-t500x500.jpg" id="icon6">Astronoaut In The Ocean - <em>Masked Wolf</em>
                     <audio id="astronoaut">
                         <source src="./media/astronaut.mp3" type="audio/mp3">
                     </audio>
-                
+                <!--JavaScript for Music Player - Astronoaut-->
                 <script>
                     var astronoaut = document.getElementById("astronoaut");
                     var icon6 = document.getElementById("icon6");
@@ -67,11 +71,11 @@
                         }
                     }           
                 </script></li>
-                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAa0SWsSNqaDhOZ2qH_udvuw_tmN7sKtnTg&usqp=CAU" id="icon8"><em>Up - Cardi B</em>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAa0SWsSNqaDhOZ2qH_udvuw_tmN7sKtnTg&usqp=CAU" id="icon8">Up - <em>Cardi B</em>
                     <audio id="up">
                         <source src="./media/up.mp3" type="audio/mp3">
                     </audio>
-                
+                <!--JavaScript for Music Player - Up-->
                 <script>
                     var up = document.getElementById("up");
                     var icon8 = document.getElementById("icon8");
@@ -86,11 +90,11 @@
                         }
                     }           
                 </script></li>
-                <li><img src="./media/solidplay.jpeg" id="icon15"><em>Solid - Young Thug & Gunna Ft. Drake</em>
+                <li><img src="./media/solidplay.jpeg" id="icon15">Solid - <em>Young Thug & Gunna Ft. Drake</em>
                     <audio id="solid">
                         <source src="./media/solid.mp3" type="audio/mp3">
                     </audio>
-                
+                <!--JavaScript for Music Player - Solid-->
                 <script>
                     var solid = document.getElementById("solid");
                     var icon15 = document.getElementById("icon15");
@@ -105,11 +109,11 @@
                         }
                     }           
                 </script></li>
-                <li><img src="./media/beatBoxPlay.jpeg" id="icon16"><em>Beat Box - SpotemGottem Ft. Pooh Shiest Or DaBaby</em>
+                <li><img src="./media/beatBoxPlay.jpeg" id="icon16">Beat Box - <em>SpotemGottem Ft. Pooh Shiest Or DaBaby</em>
                     <audio id="beatBox">
                         <source src="./media/beat.mp3" type="audio/mp3">
                     </audio>
-                
+                <!--JavaScript for Music Player - Beat Box-->
                 <script>
                     var beatBox = document.getElementById("beatBox");
                     var icon16 = document.getElementById("icon16");
@@ -124,11 +128,11 @@
                         }
                     }           
                 </script></li>
-                <li><img src="./media/bestfriendplay.jpeg" id="icon17"><em>Best Friend - Saweetie Ft. Doja Cat</em>
+                <li><img src="./media/bestfriendplay.jpeg" id="icon17">Best Friend - <em>Saweetie Ft. Doja Cat</em>
                     <audio id="bestFriend">
                         <source src="./media/bestfriend.mp3" type="audio/mp3">
                     </audio>
-                
+                <!--JavaScript for Music Player - Best Friend-->
                 <script>
                     var bestFriend = document.getElementById("bestFriend");
                     var icon17 = document.getElementById("icon17");
@@ -143,11 +147,11 @@
                         }
                     }           
                 </script></li>
-                <li><img src="./media/callingphoneplay.jpeg" id="icon18"><em>Calling My Phone - Lil Tjay Ft. 6LACK</em>
+                <li><img src="./media/callingphoneplay.jpeg" id="icon18">Calling My Phone - <em>Lil Tjay Ft. 6LACK</em>
                     <audio id="callingPhone">
                         <source src="./media/callingphone.mp3" type="audio/mp3">
                     </audio>
-                
+                <!--JavaScript for Music Player - Calling My Phone-->
                 <script>
                     var callingPhone = document.getElementById("callingPhone");
                     var icon18 = document.getElementById("icon18");
@@ -162,11 +166,11 @@
                         }
                     }           
                 </script></li>
-                <li><img src="./media/whatYouPlay.jpeg" id="icon19"><em>What You Know About Love - Pop Smoke</em>
+                <li><img src="./media/whatYouPlay.jpeg" id="icon19">What You Know About Love - <em>Pop Smoke</em>
                     <audio id="whatYou">
                         <source src="./media/whatyou.mp3" type="audio/mp3">
                     </audio>
-                
+                <!--JavaScript for Music Player - What You Know About Love-->
                 <script>
                     var whatYou = document.getElementById("whatYou");
                     var icon19 = document.getElementById("icon19");
@@ -181,11 +185,11 @@
                         }
                     }           
                 </script></li>
-                <li><img src="./media/skiplay.jpeg" id="icon20"><em>Ski - Young Thug & Gunna</em>
+                <li><img src="./media/skiplay.jpeg" id="icon20">>Ski - <em>Young Thug & Gunna</em>
                     <audio id="ski">
                         <source src="./media/ski.mp3" type="audio/mp3">
                     </audio>
-                
+                <!--JavaScript for Music Player - Ski-->
                 <script>
                     var ski = document.getElementById("ski");
                     var icon20 = document.getElementById("icon20");
@@ -200,11 +204,11 @@
                         }
                     }           
                 </script></li>
-                <li><img src="./media/moodplay.jpeg" id="icon21"><em>Mood - 24kGoldn Ft. Iann Dior</em>
+                <li><img src="./media/moodplay.jpeg" id="icon21">Mood - <em>24kGoldn Ft. Iann Dior</em>
                     <audio id="mood">
                         <source src="./media/mood.mp3" type="audio/mp3">
                     </audio>
-                
+                <!--JavaScript for Music Player - Mood-->
                 <script>
                     var mood = document.getElementById("mood");
                     var icon21 = document.getElementById("icon21");
